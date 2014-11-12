@@ -3,7 +3,6 @@
 |:--------|:--------|
 |GET     |`<rootURI>/GetModelBuildsStatus?modelId=%27<modelId>%27&onlyLastBuild=<bool>&apiVersion=%271.0%27`<br><br>Example:<br>`<rootURI>/GetModelBuildsStatus?modelId=%279559872f-7a53-4076-a3c7-19d9385c1265%27&onlyLastBuild=true&apiVersion=%271.0%27`|
 
-_ _ _
 
 |	Parameter Name	|	Valid Values						|
 |:--------			|:--------								|
