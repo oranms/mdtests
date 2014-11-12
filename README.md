@@ -77,7 +77,7 @@ Creating a “create model” request:
 | Request Body | NONE |
 
 
-**++Response++**:
+**Response**:
 
 HTTP Status code: 200
 
@@ -118,9 +118,22 @@ OData XML
 
 If you upload several catalog files to the same model with several calls we will insert only the new catalog items. Existing items will remain with the original values.
 
+| HTTP Method | URI |
+|:--------|:--------|
+|POST     |`<rootURI>/ImportCatalogFile?modelId=%27<modelId>%27&filename=%27<fileName>%27&apiVersion=%271.0%27`<br><br>Example:<br>`<rootURI>/ImportCatalogFile?modelId=%27a658c626-2baa-43a7-ac98-f6ee26120a12%27&filename=%27catalog10_small.txt%27&apiVersion=%271.0%27`|
+
+|	Parameter Name	|	Valid Values						|
+|:--------			|:--------								|
+|	modelId	|	The unique identifier of the model.  |
+| filename | Textual identifier of the catalog.<br>Only letters (A-Z, a-z), numbers (0-9), hyphens (-) and underscore (_) are allowed<br>Max length: 50 |
+|	apiVersion		| 1.0 |
+|||
+| Request Body | The catalog data. Format:<br>`<Item Id>,<Item Name>,<Item Category>[,<description>]`<br><table><tr><th>Name</th><th>Mandatory</th><th>Type</th><th>Description</th></tr><tr><td>Item Id</td><td>Yes</td><td>Alphanumeric, Max Length 50</td><td>Unique identifier of an Item</td></tr><tr><td>Item Name</td><td>Yes</td><td>Alphanumeric, Max Length 255</td><td>The Item Name</td></tr><tr><td>Item Category</td><td>Yes</td><td>Alphanumeric, Max Length 255</td><td>The category to which this item belongs (e.g. Cooking Books, Drama…)</td></tr><tr><td>Description</td><td>No</td><td>Alphanumeric, Max Length 4000</td><td>A description of this item</td></tr></table> |
+
+
 ![Table2][2]
 
-Response:
+**Response**:
 
 HTTP Status code: 200
 
