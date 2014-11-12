@@ -8,6 +8,23 @@ This document depicts how to onboard your service or application to use Azure ML
 
 ##Contents
 
+- [General Overview](#)
+- [Limitations](#)
+- [Integration](#)
+	- [Authentication](#)
+	- [Service URI](#)
+	- [API Version](#)
+	- [Create a model](#)
+	- [Import catalog data](#)
+	- [Import usage data](#)
+		- [Uploading file](#)
+		- [Using data acquisition](#)
+	- [Build a recommendation model](#)
+	- [Get Build Status of a Model](#)
+	- [Get Recommendations](#)
+	- [Update Model](#)
+- [Legal](#)
+
 * General Overview	
 * Limitations	        
 * Integration	        
