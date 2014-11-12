@@ -8,8 +8,8 @@ This document depicts how to onboard your service or application to use Azure ML
 
 ##Contents
 
-- [General Overview](#General Overview)
-- [Limitations](#)
+- [General Overview](#general-overview)
+- [Limitations](#limitations)
 - [Integration](#)
 	- [Authentication](#)
 	- [Service URI](#)
